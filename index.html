@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Croissant Catcher</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Croissant Catcher 🥐</h1>
+<div id="scoreboard">Score: <span id="score">0</span> | Time: <span id="timer">60</span>s</div>
+
+<div id="gameContainer">
+    <canvas id="gameCanvas"></canvas>
+    <div id="score">0</div>
+    <div id="timer">30</div>
+    <div id="bgCroissants"></div>
+    <div id="dustParticles"></div>
+</div>
+
+<div id="gameOver" class="hidden">
+    <h2>Game Over!</h2>
+    <p>Your score: <span id="finalScore"></span></p>
+    <button onclick="restartGame()">Play Again</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
